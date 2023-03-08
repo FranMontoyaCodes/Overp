@@ -1,0 +1,48 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<html>
+<head>
+	<title>Button and Text Box Example</title>
+	<style>
+		/* Add some style to the buttons and text boxes */
+		button {
+			background-color: #51D1EB;
+			border: none;
+			color: white;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 12px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+		input[type=text] {
+			padding: 10px;
+			border: none;
+			border-radius: 4px;
+			margin: 4px;
+		}
+	</style>
+</head>
+<body>
+	
+	<h1>Today's Goals</h1>
+	<ol>
+		<li><button>GOALS #</button><input type="text"></li>
+		<li><button>GOALS #</button><input type="text"></li>
+		<li><button>GOALS #</button><input type="text"></li>
+		<li><button>GOALS #</button><input type="text"></li>
+		<li><button>GOALS #</button><input type="text"></li>
+		<li><button>GOALS #</button><input type="text"></li>
+		<li><button>GOALS #</button><input type="text"></li>
+		<li><button>GOALS #</button><input type="text"></li>
+		<li><button>GOALS #</button><input type="text"></li>
+	</ol>
+</body>
+</html>
+{% endblock content %}

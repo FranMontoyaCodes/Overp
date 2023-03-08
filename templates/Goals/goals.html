@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Goals</title>
+    <style>
+        /* Add some style to the buttons and select elements */
+        button {
+            background-color: #51D1EB;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        select {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Add the project creation buttons and options -->
+    <h2>Create Goal</h2>
+    <button>New Goal</button>
+    <select>
+        <option value="">Select Goal Type</option>
+        <option value="type1">Type 1</option>
+        <option value="type2">Type 2</option>
+        <option value="type3">Type 3</option>
+    </select>
+
+    <!-- Add the edit options -->
+    <h2>Edit Goal</h2>
+    <button>Edit Goal</button>
+    <select>
+        <option value="">Select Goal to Edit</option>
+        <option value="project1">Goal 1</option>
+        <option value="project2">Goal 2</option>
+        <option value="project3">Goal 3</option>
+    </select>
+    <button>Save</button>
+    <button>Delete</button>
+</body>
+</html>
+    
+{% endblock %}
